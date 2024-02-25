@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShowDatabase</title>
+</head>
+<body>
+    <h1>Dữ liệu bảng</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Trường 1</th>
+                <th>Trường 2</th>
+                <!-- Thêm các tiêu đề bảng khác cho mỗi trường -->
+            </tr>
+        </thead>
+            {% for row in table_data %}
+            <tr>
+                <td>{{ row.0 }}</td>
+                <td>{{ row.1 }}</td>
+                <!-- Thêm các ô bảng khác cho mỗi trường -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
